@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" placeholder="độ c(Celsius)" id="c">
+<button onclick="nhap()">click</button>
+<p id="ketqua"></p>
+<script>
+    function nhap() {
+        let C = +document.getElementById('c').value
+        let F = (C*9)/5+32
+        document.getElementById("ketqua").innerHTML = "ketqua" + F ;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>toan tu</title>
+</head>
+<body>
+diem vat li <input type="text" id="a">
+diem hoa hoc <input type="text" id="b">
+diem sinh hoc <input type="text" id="c">
+<button onclick="nhap()">click</button>
+<script>
+    function nhap () {
+        let len = +document.getElementById('a').value
+        let xuong = +document.getElementById('b').value
+        let trai = +document.getElementById('c').value
+        let trungbinh = (len + xuong + trai)/3
+        alert(trungbinh)
+    }
+</script>
+</body>
+</html>

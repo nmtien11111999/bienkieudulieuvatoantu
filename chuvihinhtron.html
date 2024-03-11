@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    duong kinh <input type="text" id="dk">
+    <button onclick="nhan()">ketqua</button>
+    <h1 id="result">chu vi hình tròn </h1>
+    <script>
+        function nhan() {
+            let a = +document.getElementById("dk").value;
+            const pi = 3.14;
+            let cm = "centimet";
+            let b = a * pi + cm ;
+            document.getElementById("result").innerHTML = b ;
+        }
+    </script>
+</body>
+</html>
